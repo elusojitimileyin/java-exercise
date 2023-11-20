@@ -4,18 +4,19 @@ public class Numbers123{
 
 public static void main(String[] args){
 
-Scanner inputCollector = new Scanner(System.in);
-System.out.println("0 -1 +2 +1 -2");
+Scanner input = new Scanner(System.in);
+System.out.println("Enter Integer: ");
 int Integer= input.nextInt();
-if (Integer == negative); 
-System.out.print("-1 -2");
 
-if  (Integer == positive); 
-System.out.print("+1 +2");
+if (Integer < 0) 
+System.out.print("negative");
 
-if (Integer == zero); 
+if  (Integer > 0)
+System.out.print("positive");
 
-System.out.print("0");
+if (Integer == 0) 
+
+System.out.print("zero");
 
 }
 }
