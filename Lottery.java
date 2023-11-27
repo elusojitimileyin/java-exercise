@@ -10,21 +10,26 @@ Random random = new Random();
  int randomNumber = random.nextInt(1000);
 System.out.println("randomNumber: " + randomNumber);
 
-if (num == randomNumber){
-System.out.println("the award is $10000");
+int num1 = num/100;
+int num2 = num/10%10;
+int num3 = num%10;
+
+int randomnumber1 = randomNumber/100;
+int randomnumber2 = randomNumber/10%10;
+int randomnumber3 = randomNumber%10;
+
+
+if (num == randomNumber) {
+System.out.println("Congratulations! You won $10,000.");
+} 
+
+else if (num/100 == randomNumber/100 ||  num/10%10 == randomNumber/10%10 || num%10 == randomNumber%10 ){
+System.out.println("Congratulations! You won $3,000.");
 }
 
-if ((1 % 2 % 3)== randomNumber){
-System.out.println("the award is $3000");
+else if (num3 == randomNumber||  num/10%10 == randomNumber/10%10 || num%10 == randomNumber%10 ){
+System.out.println("Congratulations! You won $1,000.");
 }
-if (1 2   3 == randomNumber){
-System.out.println("the award is $1000");
-}
-
-
-
-
-
 
 
 

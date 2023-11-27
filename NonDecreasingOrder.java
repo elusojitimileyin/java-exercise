@@ -3,43 +3,40 @@ import java.util.Scanner;
   public static void main(String[]args){
    Scanner input = new Scanner(System.in);
     System.out.println("Enter the first integer:");
-	int number1 = input.nextInt();
+	int num1 = input.nextInt();
     System.out.println("Enter the second integer:");
-	int number2 = input.nextInt();
-  1. Input first integer (num1)
-2. Input second integer (num2)
-3. Input third integer (num3)
+	int num2 = input.nextInt();
+  System.out.println("Enter the third integer:");
+	int num3 = input.nextInt();
 
-4. If num1 <= num2 and num1 <= num3
-      a. Print num1
-5. If num2 <= num1 and num2 <= num3
-      a. Print num2
-6. If num3 <= num1 and num3 <= num2
-      a. Print num3
+if (num1 < num2 && num1 < num3){
+System.out.println (num1);
+      if (num2 < num3)
+           System.out.println (num2);
+            System.out.println (num3);
+      if (num3 < num2)
+            System.out.println (num3);
+           System.out.println (num2);
+}
+ else if (num2 < num1 && num2 < num3){
+System.out.println (num2);
+      if (num1 < num3)
+            System.out.print (num1);
+           System.out.print (num3);
+      if (num3 < num1)
+            System.out.println (num3);
+            System.out.println (num1);
+}
+else if (num3 < num1 && num3 < num2){
+System.out.println (num3);
+      if (num1 < num2)
+            System.out.println (num1);
+            System.out.println (num2);
+      if (num2 < num1)
+            System.out.println (num2);
+            System.out.println (num1);
 
-7. If num1 <= num2 and num1 <= num3
-      a. If num2 <= num3
-            i. Print num2
-            ii. Print num3
-      b. If num3 < num2
-            i. Print num3
-            ii. Print num2
-8. If num2 <= num1 and num2 <= num3
-      a. If num1 <= num3
-            i. Print num1
-            ii. Print num3
-      b. If num3 < num1
-            i. Print num3
-            ii. Print num1
-9. If num3 <= num1 and num3 <= num2
-      a. If num1 <= num2
-            i. Print num1
-            ii. Print num2
-      b. If num2 < num1
-            i. Print num2
-            ii. Print num1
-
-
+}
 
 
   
